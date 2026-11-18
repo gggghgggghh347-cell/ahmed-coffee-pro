@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>لوحة إدارة أحمد كوفي</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="admin">
+<div class="aurora"><i></i><i></i></div>
+<form id="login" class="g">
+  <h1 style="font-size:1.8rem">أحمد <b style="color:var(--amber)">كوفي</b></h1>
+  <p style="color:var(--mute)">لوحة الإدارة</p>
+  <input id="user" value="admin" autocomplete="username" required>
+  <input id="pw" type="password" placeholder="كلمة السر" autocomplete="current-password" required>
+  <div class="err" id="err"></div>
+  <button class="btn">دخول</button>
+</form>
+<div class="adm" id="app" hidden>
+  <header><h1>لوحة <b>الإدارة</b></h1><div><span id="live" style="color:var(--teal);font-size:.85rem;margin-inline-end:14px">● تحديث تلقائي</span><button class="btn sm" id="out">خروج</button></div></header>
+  <div class="astats">
+    <div class="g"><span>طلبات اليوم</span><b id="s1">0</b></div>
+    <div class="g"><span>إيراد اليوم</span><b id="s2">0</b></div>
+    <div class="g"><span>طلبات جديدة</span><b id="s3">0</b></div>
+    <div class="g"><span>حجوزات اليوم</span><b id="s4">0</b></div>
+  </div>
+  <div class="tabs" id="tabs">
+    <button class="tab" data-t="orders" aria-pressed="true">الطلبات<i id="b1" hidden></i></button>
+    <button class="tab" data-t="reservations" aria-pressed="false">الحجوزات<i id="b2" hidden></i></button>
+    <button class="tab" data-t="messages" aria-pressed="false">الرسائل<i id="b3" hidden></i></button>
+    <button class="tab" data-t="menu" aria-pressed="false">المنيو</button>
+  </div>
+  <div class="list" id="list"></div>
+</div>
+<script src="/admin.js"></script>
+</body>
+</html>

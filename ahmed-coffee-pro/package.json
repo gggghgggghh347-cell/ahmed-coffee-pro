@@ -1,0 +1,8 @@
+{
+  "name": "ahmed-coffee-pro",
+  "version": "2.0.0",
+  "description": "أحمد كوفي PRO — موقع كافيه كامل: واجهة زجاجية 3D + باك إند SQLite",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22.13" }
+}

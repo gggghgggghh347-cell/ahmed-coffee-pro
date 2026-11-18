@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>احجز طاولة — أحمد كوفي</title>
+<meta name="description" content="احجز طاولتك في أحمد كوفي أونلاين وبتأكيد فوري.">
+<meta name="theme-color" content="#05060a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="reserve">
+<main>
+
+<section class="page-head"><div class="eyebrow">Reservation</div><h1 class="grad">احجز طاولتك</h1><p class="lead">اختار اليوم والوقت وعدد الأفراد، ونحجزلك أنسب طاولة فورًا.</p></section>
+<section><div class="split">
+  <form class="tilt form rv" id="resForm">
+    <label>الاسم<input name="name" required maxlength="40" autocomplete="name"></label>
+    <label>رقم الموبايل<input name="phone" type="tel" required autocomplete="tel"></label>
+    <div class="row"><label>التاريخ<input name="date" type="date" required></label><label>الوقت<select name="time"></select></label></div>
+    <label>عدد الأفراد<select name="guests"></select></label>
+    <button class="cta" type="submit">أكّد الحجز</button>
+  </form>
+  <div class="info-cards">
+    <div id="resOut"></div>
+    <div class="tilt ic rv"><small>مدة الحجز</small>ساعة ونصف لكل طاولة، ولو متأخر أكتر من ١٥ دقيقة ممكن الطاولة تتسلم لغيرك.</div>
+    <div class="tilt ic rv"><small>المواعيد</small>من ٨ صباحًا لحد ١١ مساءً (آخر ميعاد حجز).</div>
+    <div class="tilt ic rv"><small>مجموعات كبيرة؟</small>لحد ١٠ أفراد أونلاين. فوق كده كلمنا على الموبايل.</div>
+  </div>
+</div></section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
